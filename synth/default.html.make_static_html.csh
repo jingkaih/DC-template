@@ -1,8 +1,8 @@
 #!/bin/csh -f
 # V0.1 create static html files
 
-set log_dir = ".DC_log_snapshot_D20211021_192139.241935"
-set html_file = "/home/home2/students/esmailid/template_9_DC/synth/default.html"
+set log_dir = ".DC_log_snapshot_D20211101_010816.631393"
+set html_file = "/home/home2/visiting/jingkai/DC-template/synth/default.html"
 set make_csh = "./make.csh"
 
 #html file exists

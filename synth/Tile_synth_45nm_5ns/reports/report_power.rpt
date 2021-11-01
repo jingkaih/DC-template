@@ -1,0 +1,112 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+Design : Tile
+Version: P-2019.03-SP1-1
+Date   : Mon Nov  1 01:21:37 2021
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+Tile                                      2.053   97.385 2.58e+06  102.018 100.0
+  add_1172 (Tile_DW01_inc_1)           2.07e-04 4.48e-04  427.410 1.08e-03   0.0
+  add_1173 (Tile_DW01_inc_0)           2.58e-04 4.76e-04  427.410 1.16e-03   0.0
+  RegMux_7 (RegMux_1)                  2.08e-02    0.208 4.07e+03    0.233   0.2
+  RegMux_6 (RegMux_2)                  2.08e-02    0.208 4.07e+03    0.233   0.2
+  RegMux_5 (RegMux_3)                  2.08e-02    0.208 4.07e+03    0.233   0.2
+  RegMux_4 (RegMux_4)                  2.08e-02    0.208 4.07e+03    0.233   0.2
+  RegMux_3 (RegMux_5)                  2.07e-02    0.208 4.07e+03    0.233   0.2
+  RegMux_2 (RegMux_6)                  2.20e-02    0.208 4.07e+03    0.234   0.2
+  RegMux_1 (RegMux_7)                  2.21e-02    0.208 4.07e+03    0.234   0.2
+  RegMux (RegMux_0)                    2.21e-02    0.208 4.07e+03    0.234   0.2
+  crossBar (CrossBarSwitchNew)            0.377    0.720 3.68e+04    1.133   1.1
+    cells_2d_63 (CrossBarCell_1)       2.91e-03 1.25e-02  551.010 1.60e-02   0.0
+    cells_2d_62 (CrossBarCell_2)       2.87e-03 1.25e-02  551.010 1.59e-02   0.0
+    cells_2d_61 (CrossBarCell_3)       2.87e-03 1.26e-02  551.010 1.60e-02   0.0
+    cells_2d_60 (CrossBarCell_4)       2.82e-03 1.24e-02  551.010 1.58e-02   0.0
+    cells_2d_59 (CrossBarCell_5)       2.88e-03 1.25e-02  551.010 1.60e-02   0.0
+    cells_2d_58 (CrossBarCell_6)       2.96e-03 1.26e-02  551.010 1.61e-02   0.0
+    cells_2d_57 (CrossBarCell_7)       2.94e-03 1.25e-02  551.010 1.60e-02   0.0
+    cells_2d_56 (CrossBarCell_8)       2.92e-03 1.25e-02  551.010 1.60e-02   0.0
+    cells_2d_55 (CrossBarCell_9)       6.38e-03 1.22e-02  551.010 1.92e-02   0.0
+    cells_2d_54 (CrossBarCell_10)      6.34e-03 1.22e-02  551.010 1.91e-02   0.0
+    cells_2d_53 (CrossBarCell_11)      6.35e-03 1.23e-02  551.010 1.92e-02   0.0
+    cells_2d_52 (CrossBarCell_12)      6.41e-03 1.23e-02  551.010 1.93e-02   0.0
+    cells_2d_51 (CrossBarCell_13)      6.36e-03 1.23e-02  551.010 1.92e-02   0.0
+    cells_2d_50 (CrossBarCell_14)      6.38e-03 1.23e-02  551.010 1.92e-02   0.0
+    cells_2d_49 (CrossBarCell_15)      6.36e-03 1.22e-02  551.010 1.91e-02   0.0
+    cells_2d_48 (CrossBarCell_16)      6.34e-03 1.22e-02  551.010 1.91e-02   0.0
+    cells_2d_47 (CrossBarCell_17)      6.24e-03 1.18e-02  551.010 1.86e-02   0.0
+    cells_2d_46 (CrossBarCell_18)      6.15e-03 1.18e-02  551.010 1.85e-02   0.0
+    cells_2d_45 (CrossBarCell_19)      6.23e-03 1.19e-02  551.010 1.87e-02   0.0
+    cells_2d_44 (CrossBarCell_20)      6.22e-03 1.19e-02  551.010 1.86e-02   0.0
+    cells_2d_43 (CrossBarCell_21)      6.26e-03 1.19e-02  551.010 1.87e-02   0.0
+    cells_2d_42 (CrossBarCell_22)      6.21e-03 1.19e-02  551.010 1.86e-02   0.0
+    cells_2d_41 (CrossBarCell_23)      6.14e-03 1.18e-02  551.010 1.85e-02   0.0
+    cells_2d_40 (CrossBarCell_24)      6.23e-03 1.19e-02  551.010 1.86e-02   0.0
+    cells_2d_39 (CrossBarCell_25)      5.59e-03 1.12e-02  549.268 1.73e-02   0.0
+    cells_2d_38 (CrossBarCell_26)      5.64e-03 1.13e-02  549.268 1.75e-02   0.0
+    cells_2d_37 (CrossBarCell_27)      5.67e-03 1.14e-02  549.268 1.76e-02   0.0
+    cells_2d_36 (CrossBarCell_28)      5.68e-03 1.13e-02  549.268 1.76e-02   0.0
+    cells_2d_35 (CrossBarCell_29)      5.62e-03 1.13e-02  549.268 1.74e-02   0.0
+    cells_2d_34 (CrossBarCell_30)      5.63e-03 1.13e-02  549.268 1.74e-02   0.0
+    cells_2d_33 (CrossBarCell_31)      5.58e-03 1.12e-02  549.268 1.74e-02   0.0
+    cells_2d_32 (CrossBarCell_32)      5.60e-03 1.12e-02  549.268 1.74e-02   0.0
+    cells_2d_31 (CrossBarCell_33)      5.25e-03 1.08e-02  549.268 1.66e-02   0.0
+    cells_2d_30 (CrossBarCell_34)      5.28e-03 1.09e-02  549.268 1.67e-02   0.0
+    cells_2d_29 (CrossBarCell_35)      5.42e-03 1.11e-02  549.268 1.71e-02   0.0
+    cells_2d_28 (CrossBarCell_36)      5.22e-03 1.08e-02  549.268 1.66e-02   0.0
+    cells_2d_27 (CrossBarCell_37)      5.40e-03 1.11e-02  549.268 1.70e-02   0.0
+    cells_2d_26 (CrossBarCell_38)      5.30e-03 1.09e-02  549.268 1.68e-02   0.0
+    cells_2d_25 (CrossBarCell_39)      5.38e-03 1.11e-02  549.268 1.70e-02   0.0
+    cells_2d_24 (CrossBarCell_40)      5.28e-03 1.09e-02  549.268 1.67e-02   0.0
+    cells_2d_23 (CrossBarCell_41)      4.96e-03 1.02e-02  549.268 1.57e-02   0.0
+    cells_2d_22 (CrossBarCell_42)      5.05e-03 1.04e-02  549.268 1.60e-02   0.0
+    cells_2d_21 (CrossBarCell_43)      5.14e-03 1.06e-02  549.268 1.63e-02   0.0
+    cells_2d_20 (CrossBarCell_44)      5.08e-03 1.04e-02  549.268 1.61e-02   0.0
+    cells_2d_19 (CrossBarCell_45)      5.00e-03 1.03e-02  549.268 1.59e-02   0.0
+    cells_2d_18 (CrossBarCell_46)      5.06e-03 1.04e-02  549.268 1.60e-02   0.0
+    cells_2d_17 (CrossBarCell_47)      5.05e-03 1.04e-02  549.268 1.60e-02   0.0
+    cells_2d_16 (CrossBarCell_48)      4.99e-03 1.03e-02  549.268 1.58e-02   0.0
+    cells_2d_15 (CrossBarCell_49)      5.05e-03 9.38e-03  551.010 1.50e-02   0.0
+    cells_2d_14 (CrossBarCell_50)      5.05e-03 9.36e-03  551.010 1.50e-02   0.0
+    cells_2d_13 (CrossBarCell_51)      5.06e-03 9.41e-03  551.010 1.50e-02   0.0
+    cells_2d_12 (CrossBarCell_52)      5.03e-03 9.35e-03  551.010 1.49e-02   0.0
+    cells_2d_11 (CrossBarCell_53)      5.03e-03 9.36e-03  551.010 1.49e-02   0.0
+    cells_2d_10 (CrossBarCell_54)      4.99e-03 9.29e-03  551.010 1.48e-02   0.0
+    cells_2d_9 (CrossBarCell_55)       5.01e-03 9.36e-03  551.010 1.49e-02   0.0
+    cells_2d_8 (CrossBarCell_56)       5.07e-03 9.37e-03  551.010 1.50e-02   0.0
+    cells_2d_7 (CrossBarCell_57)       5.56e-03 1.11e-02  549.268 1.72e-02   0.0
+    cells_2d_6 (CrossBarCell_58)       5.58e-03 1.11e-02  549.268 1.72e-02   0.0
+    cells_2d_5 (CrossBarCell_59)       5.58e-03 1.11e-02  549.268 1.72e-02   0.0
+    cells_2d_4 (CrossBarCell_60)       5.57e-03 1.11e-02  549.268 1.72e-02   0.0
+    cells_2d_3 (CrossBarCell_61)       5.54e-03 1.10e-02  549.268 1.71e-02   0.0
+    cells_2d_2 (CrossBarCell_62)       5.52e-03 1.10e-02  549.268 1.70e-02   0.0
+    cells_2d_1 (CrossBarCell_63)       5.59e-03 1.11e-02  549.268 1.72e-02   0.0
+    cells_2d_0 (CrossBarCell_0)        5.54e-03 1.10e-02  549.268 1.71e-02   0.0
+1
