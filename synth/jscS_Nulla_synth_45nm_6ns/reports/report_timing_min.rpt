@@ -1,0 +1,443 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -input_pins
+        -nets
+        -max_paths 10
+        -capacitance
+Design : jscS_Nulla
+Version: P-2019.03-SP1-1
+Date   : Thu Oct 21 19:21:55 2021
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: reg3_mem_read_data_reg_22_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg4_mem_read_data_reg_40_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg3_mem_read_data_reg_22_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg3_mem_read_data_reg_22_/Q (DFFPOSX1)                           0.07       0.07 r
+  reg3_mem_read_data[22] (net)                  3         0.01      0.00       0.07 r
+  kernel_4_0/i_4_11_1 (kernel_4)                                    0.00       0.07 r
+  kernel_4_0/i_4_11_1 (net)                               0.01      0.00       0.07 r
+  kernel_4_0/k_4_20_1/i_4_20_11_1 (kernel_4_20_1)                   0.00       0.07 r
+  kernel_4_0/k_4_20_1/i_4_20_11_1 (net)                   0.01      0.00       0.07 r
+  kernel_4_0/k_4_20_1/o_4_20_0_1 (kernel_4_20_1)                    0.00       0.07 r
+  kernel_4_0/o_4_20_1 (net)                               0.01      0.00       0.07 r
+  kernel_4_0/o_4_20_1 (kernel_4)                                    0.00       0.07 r
+  reg4_write_data[40] (net)                               0.01      0.00       0.07 r
+  reg4_mem_read_data_reg_40_/D (DFFPOSX1)                           0.00       0.07 r
+  data arrival time                                                            0.07
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg4_mem_read_data_reg_40_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.07
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.08
+
+
+  Startpoint: reg2_mem_read_data_reg_34_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg3_mem_read_data_reg_23_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_34_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg2_mem_read_data_reg_34_/Q (DFFPOSX1)                           0.07       0.07 r
+  reg2_mem_read_data[34] (net)                  2         0.00      0.00       0.07 r
+  kernel_3_0/i_3_17_1 (kernel_3)                                    0.00       0.07 r
+  kernel_3_0/i_3_17_1 (net)                               0.00      0.00       0.07 r
+  kernel_3_0/k_3_11_0/i_3_11_17_1 (kernel_3_11_0)                   0.00       0.07 r
+  kernel_3_0/k_3_11_0/i_3_11_17_1 (net)                   0.00      0.00       0.07 r
+  kernel_3_0/k_3_11_0/U7/A (NAND2X1)                                0.00       0.07 r
+  kernel_3_0/k_3_11_0/U7/Y (NAND2X1)                                0.01       0.08 f
+  kernel_3_0/k_3_11_0/n6 (net)                  1         0.00      0.00       0.08 f
+  kernel_3_0/k_3_11_0/U6/B (NAND2X1)                                0.00       0.08 f
+  kernel_3_0/k_3_11_0/U6/Y (NAND2X1)                                0.01       0.09 r
+  kernel_3_0/k_3_11_0/o_3_11_0_0 (net)          1         0.00      0.00       0.09 r
+  kernel_3_0/k_3_11_0/o_3_11_0_0 (kernel_3_11_0)                    0.00       0.09 r
+  kernel_3_0/o_3_11_0 (net)                               0.00      0.00       0.09 r
+  kernel_3_0/o_3_11_0 (kernel_3)                                    0.00       0.09 r
+  reg3_write_data[23] (net)                               0.00      0.00       0.09 r
+  reg3_mem_read_data_reg_23_/D (DFFPOSX1)                           0.00       0.09 r
+  data arrival time                                                            0.09
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg3_mem_read_data_reg_23_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.09
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.10
+
+
+  Startpoint: reg1_mem_read_data_reg_116_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_29_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_116_/CLK (DFFPOSX1)                        0.00       0.00 r
+  reg1_mem_read_data_reg_116_/Q (DFFPOSX1)                          0.07       0.07 r
+  reg1_mem_read_data[116] (net)                 2         0.00      0.00       0.07 r
+  kernel_2_0/i_2_58_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_58_1 (net)                               0.00      0.00       0.07 r
+  kernel_2_0/k_2_14_0/i_2_14_58_1 (kernel_2_14_0)                   0.00       0.07 r
+  kernel_2_0/k_2_14_0/i_2_14_58_1 (net)                   0.00      0.00       0.07 r
+  kernel_2_0/k_2_14_0/U7/A (NAND2X1)                                0.00       0.07 r
+  kernel_2_0/k_2_14_0/U7/Y (NAND2X1)                                0.01       0.08 f
+  kernel_2_0/k_2_14_0/n7 (net)                  1         0.00      0.00       0.08 f
+  kernel_2_0/k_2_14_0/U6/B (NAND2X1)                                0.00       0.08 f
+  kernel_2_0/k_2_14_0/U6/Y (NAND2X1)                                0.01       0.09 r
+  kernel_2_0/k_2_14_0/o_2_14_0_0 (net)          1         0.00      0.00       0.09 r
+  kernel_2_0/k_2_14_0/o_2_14_0_0 (kernel_2_14_0)                    0.00       0.09 r
+  kernel_2_0/o_2_14_0 (net)                               0.00      0.00       0.09 r
+  kernel_2_0/o_2_14_0 (kernel_2)                                    0.00       0.09 r
+  reg2_write_data[29] (net)                               0.00      0.00       0.09 r
+  reg2_mem_read_data_reg_29_/D (DFFPOSX1)                           0.00       0.09 r
+  data arrival time                                                            0.09
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_29_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.09
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.10
+
+
+  Startpoint: reg1_mem_read_data_reg_96_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_0_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_96_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg1_mem_read_data_reg_96_/Q (DFFPOSX1)                           0.08       0.08 r
+  reg1_mem_read_data[96] (net)                  5         0.01      0.00       0.08 r
+  kernel_2_0/i_2_48_1 (kernel_2)                                    0.00       0.08 r
+  kernel_2_0/i_2_48_1 (net)                               0.01      0.00       0.08 r
+  kernel_2_0/k_2_0_1/i_2_0_48_1 (kernel_2_0_1)                      0.00       0.08 r
+  kernel_2_0/k_2_0_1/i_2_0_48_1 (net)                     0.01      0.00       0.08 r
+  kernel_2_0/k_2_0_1/U4/C (AOI21X1)                                 0.00       0.08 r
+  kernel_2_0/k_2_0_1/U4/Y (AOI21X1)                                 0.02       0.09 f
+  kernel_2_0/k_2_0_1/n4 (net)                   1         0.00      0.00       0.09 f
+  kernel_2_0/k_2_0_1/U3/B (NAND2X1)                                 0.00       0.09 f
+  kernel_2_0/k_2_0_1/U3/Y (NAND2X1)                                 0.01       0.10 r
+  kernel_2_0/k_2_0_1/o_2_0_0_1 (net)            1         0.00      0.00       0.10 r
+  kernel_2_0/k_2_0_1/o_2_0_0_1 (kernel_2_0_1)                       0.00       0.10 r
+  kernel_2_0/o_2_0_1 (net)                                0.00      0.00       0.10 r
+  kernel_2_0/o_2_0_1 (kernel_2)                                     0.00       0.10 r
+  reg2_write_data[0] (net)                                0.00      0.00       0.10 r
+  reg2_mem_read_data_reg_0_/D (DFFPOSX1)                            0.00       0.10 r
+  data arrival time                                                            0.10
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_0_/CLK (DFFPOSX1)                          0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.11
+
+
+  Startpoint: reg1_mem_read_data_reg_34_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_51_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_34_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg1_mem_read_data_reg_34_/Q (DFFPOSX1)                           0.07       0.07 r
+  reg1_mem_read_data[34] (net)                  2         0.00      0.00       0.07 r
+  kernel_2_0/i_2_17_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_17_1 (net)                               0.00      0.00       0.07 r
+  kernel_2_0/k_2_25_0/i_2_25_17_1 (kernel_2_25_0)                   0.00       0.07 r
+  kernel_2_0/k_2_25_0/i_2_25_17_1 (net)                   0.00      0.00       0.07 r
+  kernel_2_0/k_2_25_0/U3/A (NAND2X1)                                0.00       0.07 r
+  kernel_2_0/k_2_25_0/U3/Y (NAND2X1)                                0.01       0.08 f
+  kernel_2_0/k_2_25_0/n3 (net)                  1         0.00      0.00       0.08 f
+  kernel_2_0/k_2_25_0/U2/C (OAI21X1)                                0.00       0.08 f
+  kernel_2_0/k_2_25_0/U2/Y (OAI21X1)                                0.01       0.09 r
+  kernel_2_0/k_2_25_0/o_2_25_0_0 (net)          1         0.00      0.00       0.09 r
+  kernel_2_0/k_2_25_0/o_2_25_0_0 (kernel_2_25_0)                    0.00       0.09 r
+  kernel_2_0/o_2_25_0 (net)                               0.00      0.00       0.09 r
+  kernel_2_0/o_2_25_0 (kernel_2)                                    0.00       0.09 r
+  reg2_write_data[51] (net)                               0.00      0.00       0.09 r
+  reg2_mem_read_data_reg_51_/D (DFFPOSX1)                           0.00       0.09 r
+  data arrival time                                                            0.09
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_51_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.02      -0.02
+  data required time                                                          -0.02
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.02
+  data arrival time                                                           -0.09
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.11
+
+
+  Startpoint: reg1_mem_read_data_reg_8_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_42_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_8_/CLK (DFFPOSX1)                          0.00       0.00 r
+  reg1_mem_read_data_reg_8_/Q (DFFPOSX1)                            0.07       0.07 r
+  reg1_mem_read_data[8] (net)                   3         0.01      0.00       0.07 r
+  kernel_2_0/i_2_4_1 (kernel_2)                                     0.00       0.07 r
+  kernel_2_0/i_2_4_1 (net)                                0.01      0.00       0.07 r
+  kernel_2_0/k_2_21_1/i_2_21_4_1 (kernel_2_21_1)                    0.00       0.07 r
+  kernel_2_0/k_2_21_1/i_2_21_4_1 (net)                    0.01      0.00       0.07 r
+  kernel_2_0/k_2_21_1/U6/A (NAND2X1)                                0.00       0.07 r
+  kernel_2_0/k_2_21_1/U6/Y (NAND2X1)                                0.01       0.08 f
+  kernel_2_0/k_2_21_1/n3 (net)                  1         0.00      0.00       0.08 f
+  kernel_2_0/k_2_21_1/U4/A (NAND2X1)                                0.00       0.08 f
+  kernel_2_0/k_2_21_1/U4/Y (NAND2X1)                                0.02       0.11 r
+  kernel_2_0/k_2_21_1/o_2_21_0_1 (net)          1         0.00      0.00       0.11 r
+  kernel_2_0/k_2_21_1/o_2_21_0_1 (kernel_2_21_1)                    0.00       0.11 r
+  kernel_2_0/o_2_21_1 (net)                               0.00      0.00       0.11 r
+  kernel_2_0/o_2_21_1 (kernel_2)                                    0.00       0.11 r
+  reg2_write_data[42] (net)                               0.00      0.00       0.11 r
+  reg2_mem_read_data_reg_42_/D (DFFPOSX1)                           0.00       0.11 r
+  data arrival time                                                            0.11
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_42_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.11
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.12
+
+
+  Startpoint: reg1_mem_read_data_reg_34_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_50_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_34_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg1_mem_read_data_reg_34_/Q (DFFPOSX1)                           0.07       0.07 r
+  reg1_mem_read_data[34] (net)                  2         0.00      0.00       0.07 r
+  kernel_2_0/i_2_17_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_17_1 (net)                               0.00      0.00       0.07 r
+  kernel_2_0/k_2_25_1/i_2_25_17_1 (kernel_2_25_1)                   0.00       0.07 r
+  kernel_2_0/k_2_25_1/i_2_25_17_1 (net)                   0.00      0.00       0.07 r
+  kernel_2_0/k_2_25_1/U3/C (AOI21X1)                                0.00       0.07 r
+  kernel_2_0/k_2_25_1/U3/Y (AOI21X1)                                0.01       0.08 f
+  kernel_2_0/k_2_25_1/n2 (net)                  1         0.00      0.00       0.08 f
+  kernel_2_0/k_2_25_1/U2/B (NOR2X1)                                 0.00       0.08 f
+  kernel_2_0/k_2_25_1/U2/Y (NOR2X1)                                 0.02       0.10 r
+  kernel_2_0/k_2_25_1/o_2_25_0_1 (net)          1         0.00      0.00       0.10 r
+  kernel_2_0/k_2_25_1/o_2_25_0_1 (kernel_2_25_1)                    0.00       0.10 r
+  kernel_2_0/o_2_25_1 (net)                               0.00      0.00       0.10 r
+  kernel_2_0/o_2_25_1 (kernel_2)                                    0.00       0.10 r
+  reg2_write_data[50] (net)                               0.00      0.00       0.10 r
+  reg2_mem_read_data_reg_50_/D (DFFPOSX1)                           0.00       0.10 r
+  data arrival time                                                            0.10
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_50_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.01      -0.01
+  data required time                                                          -0.01
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.01
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.12
+
+
+  Startpoint: reg1_mem_read_data_reg_46_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_22_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_46_/CLK (DFFPOSX1)                         0.00       0.00 r
+  reg1_mem_read_data_reg_46_/Q (DFFPOSX1)                           0.07       0.07 r
+  reg1_mem_read_data[46] (net)                  3         0.01      0.00       0.07 r
+  kernel_2_0/i_2_23_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_23_1 (net)                               0.01      0.00       0.07 r
+  kernel_2_0/k_2_11_1/i_2_11_23_1 (kernel_2_11_1)                   0.00       0.07 r
+  kernel_2_0/k_2_11_1/i_2_11_23_1 (net)                   0.01      0.00       0.07 r
+  kernel_2_0/k_2_11_1/U5/A (OAI21X1)                                0.00       0.07 r
+  kernel_2_0/k_2_11_1/U5/Y (OAI21X1)                                0.02       0.09 f
+  kernel_2_0/k_2_11_1/n4 (net)                  1         0.00      0.00       0.09 f
+  kernel_2_0/k_2_11_1/U4/C (OAI21X1)                                0.00       0.09 f
+  kernel_2_0/k_2_11_1/U4/Y (OAI21X1)                                0.01       0.10 r
+  kernel_2_0/k_2_11_1/o_2_11_0_1 (net)          1         0.00      0.00       0.10 r
+  kernel_2_0/k_2_11_1/o_2_11_0_1 (kernel_2_11_1)                    0.00       0.10 r
+  kernel_2_0/o_2_11_1 (net)                               0.00      0.00       0.10 r
+  kernel_2_0/o_2_11_1 (kernel_2)                                    0.00       0.10 r
+  reg2_write_data[22] (net)                               0.00      0.00       0.10 r
+  reg2_mem_read_data_reg_22_/D (DFFPOSX1)                           0.00       0.10 r
+  data arrival time                                                            0.10
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_22_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.02      -0.02
+  data required time                                                          -0.02
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.02
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.12
+
+
+  Startpoint: reg1_mem_read_data_reg_102_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_35_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_102_/CLK (DFFPOSX1)                        0.00       0.00 r
+  reg1_mem_read_data_reg_102_/Q (DFFPOSX1)                          0.07       0.07 r
+  reg1_mem_read_data[102] (net)                 3         0.01      0.00       0.07 r
+  kernel_2_0/i_2_51_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_51_1 (net)                               0.01      0.00       0.07 r
+  kernel_2_0/k_2_17_0/i_2_17_51_1 (kernel_2_17_0)                   0.00       0.07 r
+  kernel_2_0/k_2_17_0/i_2_17_51_1 (net)                   0.01      0.00       0.07 r
+  kernel_2_0/k_2_17_0/U5/C (NAND3X1)                                0.00       0.07 r
+  kernel_2_0/k_2_17_0/U5/Y (NAND3X1)                                0.01       0.09 f
+  kernel_2_0/k_2_17_0/n6 (net)                  1         0.00      0.00       0.09 f
+  kernel_2_0/k_2_17_0/U4/C (OAI21X1)                                0.00       0.09 f
+  kernel_2_0/k_2_17_0/U4/Y (OAI21X1)                                0.02       0.10 r
+  kernel_2_0/k_2_17_0/o_2_17_0_0 (net)          1         0.00      0.00       0.10 r
+  kernel_2_0/k_2_17_0/o_2_17_0_0 (kernel_2_17_0)                    0.00       0.10 r
+  kernel_2_0/o_2_17_0 (net)                               0.00      0.00       0.10 r
+  kernel_2_0/o_2_17_0 (kernel_2)                                    0.00       0.10 r
+  reg2_write_data[35] (net)                               0.00      0.00       0.10 r
+  reg2_mem_read_data_reg_35_/D (DFFPOSX1)                           0.00       0.10 r
+  data arrival time                                                            0.10
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_35_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.02      -0.02
+  data required time                                                          -0.02
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.02
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.12
+
+
+  Startpoint: reg1_mem_read_data_reg_116_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg2_mem_read_data_reg_28_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                       Fanout       Cap      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg1_mem_read_data_reg_116_/CLK (DFFPOSX1)                        0.00       0.00 r
+  reg1_mem_read_data_reg_116_/Q (DFFPOSX1)                          0.07       0.07 r
+  reg1_mem_read_data[116] (net)                 2         0.00      0.00       0.07 r
+  kernel_2_0/i_2_58_1 (kernel_2)                                    0.00       0.07 r
+  kernel_2_0/i_2_58_1 (net)                               0.00      0.00       0.07 r
+  kernel_2_0/k_2_14_1/i_2_14_58_1 (kernel_2_14_1)                   0.00       0.07 r
+  kernel_2_0/k_2_14_1/i_2_14_58_1 (net)                   0.00      0.00       0.07 r
+  kernel_2_0/k_2_14_1/U7/C (OAI21X1)                                0.00       0.07 r
+  kernel_2_0/k_2_14_1/U7/Y (OAI21X1)                                0.02       0.08 f
+  kernel_2_0/k_2_14_1/n8 (net)                  1         0.00      0.00       0.08 f
+  kernel_2_0/k_2_14_1/U6/C (NAND3X1)                                0.00       0.08 f
+  kernel_2_0/k_2_14_1/U6/Y (NAND3X1)                                0.03       0.11 r
+  kernel_2_0/k_2_14_1/o_2_14_0_1 (net)          1         0.00      0.00       0.11 r
+  kernel_2_0/k_2_14_1/o_2_14_0_1 (kernel_2_14_1)                    0.00       0.11 r
+  kernel_2_0/o_2_14_1 (net)                               0.00      0.00       0.11 r
+  kernel_2_0/o_2_14_1 (kernel_2)                                    0.00       0.11 r
+  reg2_write_data[28] (net)                               0.00      0.00       0.11 r
+  reg2_mem_read_data_reg_28_/D (DFFPOSX1)                           0.00       0.11 r
+  data arrival time                                                            0.11
+
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  reg2_mem_read_data_reg_28_/CLK (DFFPOSX1)                         0.00       0.00 r
+  library hold time                                                -0.02      -0.02
+  data required time                                                          -0.02
+  ------------------------------------------------------------------------------------
+  data required time                                                          -0.02
+  data arrival time                                                           -0.11
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.12
+
+
+1

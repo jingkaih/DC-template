@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export SYNOPSYS=/export/opt/synopsys/O-2018.06-SP1                      
+export PATH=$SYNOPSYS/bin:$PATH
+export SNPSLMD_QUEUE=true
+export DESIGN=Tile
+export TECH=45nm
+
+export CLKNAME=clock
+## This is actually in PS, so this would mean 1 GHz (1ns) (1000)
+export CLK_PERIOD=5
+
+#export SYNTH_LIBRARY=/projects/mirage/cell_libs/invecas_12lp_sc9t/model/timing/db/IN14LPP_SC9T_84CPP_BASE_SSC14L_FFPG_0P66V_125C.db
+#export SYNTH_LIBRARY=/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/ncsu_basekit/lib/NCSU_TechLib_FreePDK45/tech.db
+#export SYNTH_LIBRARY=/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/source/signalstorm/files/gscl45nm.db
+export SYNTH_LIBRARY=/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db

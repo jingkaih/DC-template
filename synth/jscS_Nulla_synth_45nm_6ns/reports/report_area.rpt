@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : jscS_Nulla
+Version: P-2019.03-SP1-1
+Date   : Thu Oct 21 19:21:55 2021
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                         2391
+Number of nets:                          4944
+Number of cells:                         3065
+Number of combinational cells:           2379
+Number of sequential cells:               275
+Number of macros/black boxes:               0
+Number of buf/inv:                        674
+Number of references:                       6
+
+Combinational area:               5530.700393
+Buf/Inv area:                      948.924584
+Noncombinational area:            2193.977451
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  7724.677844
+Total area:                 undefined
+1

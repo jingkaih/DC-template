@@ -1,0 +1,162 @@
+date
+Sun Oct  3 23:19:07 2021
+set_host_options -max_cores 8
+1
+set compile_seqmap_propagate_constants     false
+false
+set compile_seqmap_propagate_high_effort   false
+false
+set compile_enable_register_merging        false
+false
+set write_sdc_output_net_resistance        false
+false
+set timing_separate_clock_gating_group     true
+true
+set verilogout_no_tri tru
+tru
+set html_log_enable true
+true
+set design       [getenv "DESIGN"]
+jscL_Nulla
+set clkname      [getenv "CLKNAME"]
+clk
+set clkperiod    [getenv "CLK_PERIOD"]
+1000
+set target_lib   [getenv "SYNTH_LIBRARY"]
+/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db
+set tech         [getenv "TECH"]
+45nm
+set work_dir     ${design}_synth_${tech}_${clkperiod}ps
+jscL_Nulla_synth_45nm_1000ps
+#if {[file exist $work_dir]} {
+#sh rm -rf $work_dir
+#}
+sh mkdir -p $work_dir/reports
+sh mkdir -p $work_dir/netlist
+set search_path [concat * $search_path]
+* . /opt/synopsys/syn/P-2019.03-SP1-1/libraries/syn /opt/synopsys/syn/P-2019.03-SP1-1/dw/syn_ver /opt/synopsys/syn/P-2019.03-SP1-1/dw/sim_ver
+sh rm -rf ./work
+define_design_lib WORK -path ./work
+1
+set_svf $design.svf
+1
+set target_library $target_lib
+/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db
+set link_library $target_lib
+/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db
+#source -echo -verbose ../../../../../memlib/link_mem.tcl
+if {[file exist ./set_design.tcl]} {
+  source ./set_design.tcl
+} else {
+  source -echo -verbose ./analyze.tcl
+}
+analyze -library WORK -format verilog ../rtl/kernel_1.v;
+Warning: HTML log file will be overwritten: '/home/home2/students/esmailid/template_5_DC/synth/default.html'
+        If this is not desired then please use the following variable to rename the HTML file: html_log_filename (DCSH-019)
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_1.v
+Presto compilation completed successfully.
+Loading db file '/home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+1
+analyze -library WORK -format verilog ../rtl/kernel_2.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_2.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/kernel_3.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_3.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/kernel_4.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_4.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/kernel_5.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_5.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/kernel_6.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/kernel_6.v
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../rtl/jscL_Nulla.v;
+Running PRESTO HDLC
+Compiling source file ../rtl/jscL_Nulla.v
+Presto compilation completed successfully.
+1
+1
+elaborate $design
+Loading db file '/opt/synopsys/syn/P-2019.03-SP1-1/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/syn/P-2019.03-SP1-1/libraries/syn/standard.sldb'
+  Loading link library 'gscl45nm'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+        in routine jscL_Nulla line 36 in file
+                '../rtl/jscL_Nulla.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| reg1_mem_read_data_reg | Flip-flop |  96   |  Y  | N  | N  | N  | N  | N  | N  |
+| reg2_mem_read_data_reg | Flip-flop |  192  |  Y  | N  | N  | N  | N  | N  | N  |
+| reg3_mem_read_data_reg | Flip-flop |  576  |  Y  | N  | N  | N  | N  | N  | N  |
+| reg4_mem_read_data_reg | Flip-flop |  576  |  Y  | N  | N  | N  | N  | N  | N  |
+| reg5_mem_read_data_reg | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+| reg6_mem_read_data_reg | Flip-flop |  35   |  Y  | N  | N  | N  | N  | N  | N  |
+| reg0_mem_read_data_reg | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully. (jscL_Nulla)
+Elaborated 1 design.
+Current design is now 'jscL_Nulla'.
+Information: Building the design 'kernel_1'. (HDL-193)
+Presto compilation completed successfully. (kernel_1)
+Information: Building the design 'kernel_2'. (HDL-193)
+Presto compilation completed successfully. (kernel_2)
+Information: Building the design 'kernel_3'. (HDL-193)
+Presto compilation completed successfully. (kernel_3)
+Information: Building the design 'kernel_4'. (HDL-193)
+Presto compilation completed successfully. (kernel_4)
+Information: Building the design 'kernel_5'. (HDL-193)
+Presto compilation completed successfully. (kernel_5)
+Information: Building the design 'kernel_6'. (HDL-193)
+Presto compilation completed successfully. (kernel_6)
+Information: Building the design 'kernel_1_0_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_0_0)
+Information: Building the design 'kernel_1_1_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_1_0)
+Information: Building the design 'kernel_1_2_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_2_0)
+Information: Building the design 'kernel_1_3_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_3_0)
+Information: Building the design 'kernel_1_4_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_4_0)
+Information: Building the design 'kernel_1_5_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_5_0)
+Information: Building the design 'kernel_1_6_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_6_0)
+Information: Building the design 'kernel_1_7_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_7_0)
+Information: Building the design 'kernel_1_8_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_8_0)
+Information: Building the design 'kernel_1_9_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_9_0)
+Information: Building the design 'kernel_1_10_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_10_0)
+Information: Building the design 'kernel_1_11_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_11_0)
+Information: Building the design 'kernel_1_12_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_12_0)
+Information: Building the design 'kernel_1_13_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_13_0)
+Information: Building the design 'kernel_1_14_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_14_0)
+Information: Building the design 'kernel_1_15_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_15_0)
+Information: Building the design 'kernel_1_16_0'. (HDL-193)
+Presto compilation completed successfully. (kernel_1_16_0)
+Information: Building the design 'kernel_1_17_0'. (HDL-193)

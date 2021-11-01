@@ -1,0 +1,5 @@
+Modify analzye.tcl to list all the RTL source found in the /rtl directory
+
+Edit ./set_env for the technology library (synthesis targetlibrary) and  clock period, then
+source ./set_env
+source ./run_synth.sh 
