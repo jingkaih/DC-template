@@ -10,4 +10,4 @@
 
 #analyze -library WORK -format verilog ../rtl/jscS_Nulla.v;
 
-analyze -library WORK -format verilog ../rtl/tile.v;
+analyze -library WORK -format verilog ../rtl/Tile.v;

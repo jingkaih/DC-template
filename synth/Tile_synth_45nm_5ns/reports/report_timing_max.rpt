@@ -1,0 +1,866 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -input_pins
+        -nets
+        -max_paths 10
+        -capacitance
+Design : Tile
+Version: P-2019.03-SP1-1
+Date   : Mon Nov  1 01:21:09 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: rdAddrBase_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_19_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_2_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_2_/Q (DFFPOSX1)                     0.11       0.11 f
+  N20 (net)                      5         0.01      0.00       0.11 f
+  U102504/B (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66685/A (BUFX2)                                   0.00       0.75 f
+  U66685/Y (BUFX2)                                   0.47       1.21 f
+  n112766 (net)                144         0.38      0.00       1.21 f
+  U122977/B (OAI21X1)                                0.00       1.21 f
+  U122977/Y (OAI21X1)                                0.17       1.38 r
+  n84168 (net)                   1         0.00      0.00       1.38 r
+  U122978/C (AOI21X1)                                0.00       1.38 r
+  U122978/Y (AOI21X1)                                0.06       1.44 f
+  n84169 (net)                   1         0.00      0.00       1.44 f
+  U122979/C (NAND3X1)                                0.00       1.44 f
+  U122979/Y (NAND3X1)                                0.04       1.48 r
+  n84176 (net)                   1         0.00      0.00       1.48 r
+  U122984/A (NOR3X1)                                 0.00       1.48 r
+  U122984/Y (NOR3X1)                                 0.04       1.53 f
+  n84187 (net)                   1         0.00      0.00       1.53 f
+  U122995/A (NOR3X1)                                 0.00       1.53 f
+  U122995/Y (NOR3X1)                                 0.05       1.58 r
+  n84188 (net)                   1         0.00      0.00       1.58 r
+  U122996/B (AND2X1)                                 0.00       1.58 r
+  U122996/Y (AND2X1)                                 0.04       1.62 r
+  n84190 (net)                   1         0.00      0.00       1.62 r
+  U122997/C (NAND3X1)                                0.00       1.62 r
+  U122997/Y (NAND3X1)                                0.01       1.63 f
+  n84193 (net)                   1         0.00      0.00       1.63 f
+  U122998/B (AND2X1)                                 0.00       1.63 f
+  U122998/Y (AND2X1)                                 0.05       1.68 f
+  n84195 (net)                   1         0.00      0.00       1.68 f
+  U122999/C (NAND3X1)                                0.00       1.68 f
+  U122999/Y (NAND3X1)                                0.03       1.71 r
+  n84545 (net)                   1         0.00      0.00       1.71 r
+  U123347/A (NOR3X1)                                 0.00       1.71 r
+  U123347/Y (NOR3X1)                                 0.04       1.75 f
+  n84546 (net)                   1         0.00      0.00       1.75 f
+  U123348/B (OR2X1)                                  0.00       1.75 f
+  U123348/Y (OR2X1)                                  0.05       1.80 f
+  mem_ctrl_MPORT_data[19] (net)     1      0.00      0.00       1.80 f
+  U62614/A (AOI22X1)                                 0.00       1.80 f
+  U62614/Y (AOI22X1)                                 0.05       1.85 r
+  n29831 (net)                   1         0.00      0.00       1.85 r
+  U68808/A (INVX1)                                   0.00       1.85 r
+  U68808/Y (INVX1)                                   0.02       1.87 f
+  n114261 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_19_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_19_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.07
+
+
+  Startpoint: rdAddrBase_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_2_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_2_/Q (DFFPOSX1)                     0.11       0.11 f
+  N20 (net)                      5         0.01      0.00       0.11 f
+  U102504/B (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66683/A (BUFX2)                                   0.00       0.75 f
+  U66683/Y (BUFX2)                                   0.47       1.21 f
+  n112765 (net)                144         0.38      0.00       1.21 f
+  U116032/B (OAI21X1)                                0.00       1.21 f
+  U116032/Y (OAI21X1)                                0.17       1.38 r
+  n77228 (net)                   1         0.00      0.00       1.38 r
+  U116033/C (AOI21X1)                                0.00       1.38 r
+  U116033/Y (AOI21X1)                                0.06       1.44 f
+  n77229 (net)                   1         0.00      0.00       1.44 f
+  U116034/C (NAND3X1)                                0.00       1.44 f
+  U116034/Y (NAND3X1)                                0.04       1.48 r
+  n77236 (net)                   1         0.00      0.00       1.48 r
+  U116039/A (NOR3X1)                                 0.00       1.48 r
+  U116039/Y (NOR3X1)                                 0.04       1.53 f
+  n77247 (net)                   1         0.00      0.00       1.53 f
+  U116050/A (NOR3X1)                                 0.00       1.53 f
+  U116050/Y (NOR3X1)                                 0.05       1.58 r
+  n77248 (net)                   1         0.00      0.00       1.58 r
+  U116051/B (AND2X1)                                 0.00       1.58 r
+  U116051/Y (AND2X1)                                 0.04       1.62 r
+  n77250 (net)                   1         0.00      0.00       1.62 r
+  U116052/C (NAND3X1)                                0.00       1.62 r
+  U116052/Y (NAND3X1)                                0.01       1.63 f
+  n77253 (net)                   1         0.00      0.00       1.63 f
+  U116053/B (AND2X1)                                 0.00       1.63 f
+  U116053/Y (AND2X1)                                 0.05       1.68 f
+  n77255 (net)                   1         0.00      0.00       1.68 f
+  U116054/C (NAND3X1)                                0.00       1.68 f
+  U116054/Y (NAND3X1)                                0.03       1.71 r
+  n77605 (net)                   1         0.00      0.00       1.71 r
+  U116402/A (NOR3X1)                                 0.00       1.71 r
+  U116402/Y (NOR3X1)                                 0.04       1.75 f
+  n77606 (net)                   1         0.00      0.00       1.75 f
+  U116403/B (OR2X1)                                  0.00       1.75 f
+  U116403/Y (OR2X1)                                  0.05       1.80 f
+  mem_ctrl_MPORT_data[14] (net)     1      0.00      0.00       1.80 f
+  U62604/A (AOI22X1)                                 0.00       1.80 f
+  U62604/Y (AOI22X1)                                 0.05       1.85 r
+  n29826 (net)                   1         0.00      0.00       1.85 r
+  U68803/A (INVX1)                                   0.00       1.85 r
+  U68803/Y (INVX1)                                   0.02       1.87 f
+  n114266 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_14_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_14_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.07
+
+
+  Startpoint: rdAddrBase_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_19_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_1_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_1_/Q (DFFPOSX1)                     0.08       0.08 r
+  N19 (net)                      5         0.01      0.00       0.08 r
+  U68810/A (INVX1)                                   0.00       0.08 r
+  U68810/Y (INVX1)                                   0.03       0.11 f
+  n108175 (net)                  3         0.01      0.00       0.11 f
+  U102504/A (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66685/A (BUFX2)                                   0.00       0.75 f
+  U66685/Y (BUFX2)                                   0.47       1.21 f
+  n112766 (net)                144         0.38      0.00       1.21 f
+  U122977/B (OAI21X1)                                0.00       1.21 f
+  U122977/Y (OAI21X1)                                0.17       1.38 r
+  n84168 (net)                   1         0.00      0.00       1.38 r
+  U122978/C (AOI21X1)                                0.00       1.38 r
+  U122978/Y (AOI21X1)                                0.06       1.44 f
+  n84169 (net)                   1         0.00      0.00       1.44 f
+  U122979/C (NAND3X1)                                0.00       1.44 f
+  U122979/Y (NAND3X1)                                0.04       1.48 r
+  n84176 (net)                   1         0.00      0.00       1.48 r
+  U122984/A (NOR3X1)                                 0.00       1.48 r
+  U122984/Y (NOR3X1)                                 0.04       1.53 f
+  n84187 (net)                   1         0.00      0.00       1.53 f
+  U122995/A (NOR3X1)                                 0.00       1.53 f
+  U122995/Y (NOR3X1)                                 0.05       1.58 r
+  n84188 (net)                   1         0.00      0.00       1.58 r
+  U122996/B (AND2X1)                                 0.00       1.58 r
+  U122996/Y (AND2X1)                                 0.04       1.62 r
+  n84190 (net)                   1         0.00      0.00       1.62 r
+  U122997/C (NAND3X1)                                0.00       1.62 r
+  U122997/Y (NAND3X1)                                0.01       1.63 f
+  n84193 (net)                   1         0.00      0.00       1.63 f
+  U122998/B (AND2X1)                                 0.00       1.63 f
+  U122998/Y (AND2X1)                                 0.05       1.68 f
+  n84195 (net)                   1         0.00      0.00       1.68 f
+  U122999/C (NAND3X1)                                0.00       1.68 f
+  U122999/Y (NAND3X1)                                0.03       1.71 r
+  n84545 (net)                   1         0.00      0.00       1.71 r
+  U123347/A (NOR3X1)                                 0.00       1.71 r
+  U123347/Y (NOR3X1)                                 0.04       1.75 f
+  n84546 (net)                   1         0.00      0.00       1.75 f
+  U123348/B (OR2X1)                                  0.00       1.75 f
+  U123348/Y (OR2X1)                                  0.05       1.80 f
+  mem_ctrl_MPORT_data[19] (net)     1      0.00      0.00       1.80 f
+  U62614/A (AOI22X1)                                 0.00       1.80 f
+  U62614/Y (AOI22X1)                                 0.05       1.85 r
+  n29831 (net)                   1         0.00      0.00       1.85 r
+  U68808/A (INVX1)                                   0.00       1.85 r
+  U68808/Y (INVX1)                                   0.02       1.87 f
+  n114261 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_19_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_19_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.07
+
+
+  Startpoint: rdAddrBase_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_1_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_1_/Q (DFFPOSX1)                     0.08       0.08 r
+  N19 (net)                      5         0.01      0.00       0.08 r
+  U68810/A (INVX1)                                   0.00       0.08 r
+  U68810/Y (INVX1)                                   0.03       0.11 f
+  n108175 (net)                  3         0.01      0.00       0.11 f
+  U102504/A (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66683/A (BUFX2)                                   0.00       0.75 f
+  U66683/Y (BUFX2)                                   0.47       1.21 f
+  n112765 (net)                144         0.38      0.00       1.21 f
+  U116032/B (OAI21X1)                                0.00       1.21 f
+  U116032/Y (OAI21X1)                                0.17       1.38 r
+  n77228 (net)                   1         0.00      0.00       1.38 r
+  U116033/C (AOI21X1)                                0.00       1.38 r
+  U116033/Y (AOI21X1)                                0.06       1.44 f
+  n77229 (net)                   1         0.00      0.00       1.44 f
+  U116034/C (NAND3X1)                                0.00       1.44 f
+  U116034/Y (NAND3X1)                                0.04       1.48 r
+  n77236 (net)                   1         0.00      0.00       1.48 r
+  U116039/A (NOR3X1)                                 0.00       1.48 r
+  U116039/Y (NOR3X1)                                 0.04       1.53 f
+  n77247 (net)                   1         0.00      0.00       1.53 f
+  U116050/A (NOR3X1)                                 0.00       1.53 f
+  U116050/Y (NOR3X1)                                 0.05       1.58 r
+  n77248 (net)                   1         0.00      0.00       1.58 r
+  U116051/B (AND2X1)                                 0.00       1.58 r
+  U116051/Y (AND2X1)                                 0.04       1.62 r
+  n77250 (net)                   1         0.00      0.00       1.62 r
+  U116052/C (NAND3X1)                                0.00       1.62 r
+  U116052/Y (NAND3X1)                                0.01       1.63 f
+  n77253 (net)                   1         0.00      0.00       1.63 f
+  U116053/B (AND2X1)                                 0.00       1.63 f
+  U116053/Y (AND2X1)                                 0.05       1.68 f
+  n77255 (net)                   1         0.00      0.00       1.68 f
+  U116054/C (NAND3X1)                                0.00       1.68 f
+  U116054/Y (NAND3X1)                                0.03       1.71 r
+  n77605 (net)                   1         0.00      0.00       1.71 r
+  U116402/A (NOR3X1)                                 0.00       1.71 r
+  U116402/Y (NOR3X1)                                 0.04       1.75 f
+  n77606 (net)                   1         0.00      0.00       1.75 f
+  U116403/B (OR2X1)                                  0.00       1.75 f
+  U116403/Y (OR2X1)                                  0.05       1.80 f
+  mem_ctrl_MPORT_data[14] (net)     1      0.00      0.00       1.80 f
+  U62604/A (AOI22X1)                                 0.00       1.80 f
+  U62604/Y (AOI22X1)                                 0.05       1.85 r
+  n29826 (net)                   1         0.00      0.00       1.85 r
+  U68803/A (INVX1)                                   0.00       1.85 r
+  U68803/Y (INVX1)                                   0.02       1.87 f
+  n114266 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_14_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_14_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.07
+
+
+  Startpoint: rdAddrBase_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_19_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_2_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_2_/Q (DFFPOSX1)                     0.11       0.11 f
+  N20 (net)                      5         0.01      0.00       0.11 f
+  U102504/B (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66685/A (BUFX2)                                   0.00       0.75 f
+  U66685/Y (BUFX2)                                   0.47       1.21 f
+  n112766 (net)                144         0.38      0.00       1.21 f
+  U122283/B (OAI21X1)                                0.00       1.21 f
+  U122283/Y (OAI21X1)                                0.17       1.38 r
+  n83475 (net)                   1         0.00      0.00       1.38 r
+  U122284/C (AOI21X1)                                0.00       1.38 r
+  U122284/Y (AOI21X1)                                0.06       1.44 f
+  n83476 (net)                   1         0.00      0.00       1.44 f
+  U122285/C (NAND3X1)                                0.00       1.44 f
+  U122285/Y (NAND3X1)                                0.04       1.48 r
+  n83483 (net)                   1         0.00      0.00       1.48 r
+  U122290/A (NOR3X1)                                 0.00       1.48 r
+  U122290/Y (NOR3X1)                                 0.04       1.53 f
+  n83494 (net)                   1         0.00      0.00       1.53 f
+  U122301/A (NOR3X1)                                 0.00       1.53 f
+  U122301/Y (NOR3X1)                                 0.05       1.58 r
+  n83495 (net)                   1         0.00      0.00       1.58 r
+  U122302/B (AND2X1)                                 0.00       1.58 r
+  U122302/Y (AND2X1)                                 0.04       1.62 r
+  n83497 (net)                   1         0.00      0.00       1.62 r
+  U122303/C (NAND3X1)                                0.00       1.62 r
+  U122303/Y (NAND3X1)                                0.01       1.63 f
+  n83500 (net)                   1         0.00      0.00       1.63 f
+  U122304/B (AND2X1)                                 0.00       1.63 f
+  U122304/Y (AND2X1)                                 0.05       1.68 f
+  n83502 (net)                   1         0.00      0.00       1.68 f
+  U122305/C (NAND3X1)                                0.00       1.68 f
+  U122305/Y (NAND3X1)                                0.03       1.71 r
+  n83852 (net)                   1         0.00      0.00       1.71 r
+  U122653/A (NOR3X1)                                 0.00       1.71 r
+  U122653/Y (NOR3X1)                                 0.04       1.75 f
+  n84547 (net)                   1         0.00      0.00       1.75 f
+  U123348/A (OR2X1)                                  0.00       1.75 f
+  U123348/Y (OR2X1)                                  0.04       1.80 f
+  mem_ctrl_MPORT_data[19] (net)     1      0.00      0.00       1.80 f
+  U62614/A (AOI22X1)                                 0.00       1.80 f
+  U62614/Y (AOI22X1)                                 0.05       1.84 r
+  n29831 (net)                   1         0.00      0.00       1.84 r
+  U68808/A (INVX1)                                   0.00       1.84 r
+  U68808/Y (INVX1)                                   0.02       1.87 f
+  n114261 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_19_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_19_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+  Startpoint: rdAddrBase_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_2_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_2_/Q (DFFPOSX1)                     0.11       0.11 f
+  N20 (net)                      5         0.01      0.00       0.11 f
+  U102504/B (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66683/A (BUFX2)                                   0.00       0.75 f
+  U66683/Y (BUFX2)                                   0.47       1.21 f
+  n112765 (net)                144         0.38      0.00       1.21 f
+  U115338/B (OAI21X1)                                0.00       1.21 f
+  U115338/Y (OAI21X1)                                0.17       1.38 r
+  n76535 (net)                   1         0.00      0.00       1.38 r
+  U115339/C (AOI21X1)                                0.00       1.38 r
+  U115339/Y (AOI21X1)                                0.06       1.44 f
+  n76536 (net)                   1         0.00      0.00       1.44 f
+  U115340/C (NAND3X1)                                0.00       1.44 f
+  U115340/Y (NAND3X1)                                0.04       1.48 r
+  n76543 (net)                   1         0.00      0.00       1.48 r
+  U115345/A (NOR3X1)                                 0.00       1.48 r
+  U115345/Y (NOR3X1)                                 0.04       1.53 f
+  n76554 (net)                   1         0.00      0.00       1.53 f
+  U115356/A (NOR3X1)                                 0.00       1.53 f
+  U115356/Y (NOR3X1)                                 0.05       1.58 r
+  n76555 (net)                   1         0.00      0.00       1.58 r
+  U115357/B (AND2X1)                                 0.00       1.58 r
+  U115357/Y (AND2X1)                                 0.04       1.62 r
+  n76557 (net)                   1         0.00      0.00       1.62 r
+  U115358/C (NAND3X1)                                0.00       1.62 r
+  U115358/Y (NAND3X1)                                0.01       1.63 f
+  n76560 (net)                   1         0.00      0.00       1.63 f
+  U115359/B (AND2X1)                                 0.00       1.63 f
+  U115359/Y (AND2X1)                                 0.05       1.68 f
+  n76562 (net)                   1         0.00      0.00       1.68 f
+  U115360/C (NAND3X1)                                0.00       1.68 f
+  U115360/Y (NAND3X1)                                0.03       1.71 r
+  n76912 (net)                   1         0.00      0.00       1.71 r
+  U115708/A (NOR3X1)                                 0.00       1.71 r
+  U115708/Y (NOR3X1)                                 0.04       1.75 f
+  n77607 (net)                   1         0.00      0.00       1.75 f
+  U116403/A (OR2X1)                                  0.00       1.75 f
+  U116403/Y (OR2X1)                                  0.04       1.80 f
+  mem_ctrl_MPORT_data[14] (net)     1      0.00      0.00       1.80 f
+  U62604/A (AOI22X1)                                 0.00       1.80 f
+  U62604/Y (AOI22X1)                                 0.05       1.84 r
+  n29826 (net)                   1         0.00      0.00       1.84 r
+  U68803/A (INVX1)                                   0.00       1.84 r
+  U68803/Y (INVX1)                                   0.02       1.87 f
+  n114266 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_14_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_14_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+  Startpoint: rdAddrBase_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_20_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_2_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_2_/Q (DFFPOSX1)                     0.11       0.11 f
+  N20 (net)                      5         0.01      0.00       0.11 f
+  U102504/B (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66686/A (BUFX2)                                   0.00       0.75 f
+  U66686/Y (BUFX2)                                   0.47       1.21 f
+  n112767 (net)                144         0.38      0.00       1.21 f
+  U123672/B (OAI21X1)                                0.00       1.21 f
+  U123672/Y (OAI21X1)                                0.17       1.38 r
+  n84863 (net)                   1         0.00      0.00       1.38 r
+  U123673/C (AOI21X1)                                0.00       1.38 r
+  U123673/Y (AOI21X1)                                0.06       1.44 f
+  n84864 (net)                   1         0.00      0.00       1.44 f
+  U123674/C (NAND3X1)                                0.00       1.44 f
+  U123674/Y (NAND3X1)                                0.04       1.48 r
+  n84871 (net)                   1         0.00      0.00       1.48 r
+  U123679/A (NOR3X1)                                 0.00       1.48 r
+  U123679/Y (NOR3X1)                                 0.04       1.53 f
+  n84882 (net)                   1         0.00      0.00       1.53 f
+  U123690/A (NOR3X1)                                 0.00       1.53 f
+  U123690/Y (NOR3X1)                                 0.05       1.58 r
+  n84883 (net)                   1         0.00      0.00       1.58 r
+  U123691/B (AND2X1)                                 0.00       1.58 r
+  U123691/Y (AND2X1)                                 0.04       1.62 r
+  n84885 (net)                   1         0.00      0.00       1.62 r
+  U123692/C (NAND3X1)                                0.00       1.62 r
+  U123692/Y (NAND3X1)                                0.01       1.63 f
+  n84888 (net)                   1         0.00      0.00       1.63 f
+  U123693/B (AND2X1)                                 0.00       1.63 f
+  U123693/Y (AND2X1)                                 0.05       1.68 f
+  n84890 (net)                   1         0.00      0.00       1.68 f
+  U123694/C (NAND3X1)                                0.00       1.68 f
+  U123694/Y (NAND3X1)                                0.03       1.71 r
+  n85240 (net)                   1         0.00      0.00       1.71 r
+  U124042/A (NOR3X1)                                 0.00       1.71 r
+  U124042/Y (NOR3X1)                                 0.04       1.75 f
+  n85935 (net)                   1         0.00      0.00       1.75 f
+  U124737/A (OR2X1)                                  0.00       1.75 f
+  U124737/Y (OR2X1)                                  0.04       1.80 f
+  mem_ctrl_MPORT_data[20] (net)     1      0.00      0.00       1.80 f
+  U62616/A (AOI22X1)                                 0.00       1.80 f
+  U62616/Y (AOI22X1)                                 0.05       1.84 r
+  n29832 (net)                   1         0.00      0.00       1.84 r
+  U68809/A (INVX1)                                   0.00       1.84 r
+  U68809/Y (INVX1)                                   0.02       1.87 f
+  n114260 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_20_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_20_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+  Startpoint: rdAddrBase_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_19_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_1_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_1_/Q (DFFPOSX1)                     0.08       0.08 r
+  N19 (net)                      5         0.01      0.00       0.08 r
+  U68810/A (INVX1)                                   0.00       0.08 r
+  U68810/Y (INVX1)                                   0.03       0.11 f
+  n108175 (net)                  3         0.01      0.00       0.11 f
+  U102504/A (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66685/A (BUFX2)                                   0.00       0.75 f
+  U66685/Y (BUFX2)                                   0.47       1.21 f
+  n112766 (net)                144         0.38      0.00       1.21 f
+  U122283/B (OAI21X1)                                0.00       1.21 f
+  U122283/Y (OAI21X1)                                0.17       1.38 r
+  n83475 (net)                   1         0.00      0.00       1.38 r
+  U122284/C (AOI21X1)                                0.00       1.38 r
+  U122284/Y (AOI21X1)                                0.06       1.44 f
+  n83476 (net)                   1         0.00      0.00       1.44 f
+  U122285/C (NAND3X1)                                0.00       1.44 f
+  U122285/Y (NAND3X1)                                0.04       1.48 r
+  n83483 (net)                   1         0.00      0.00       1.48 r
+  U122290/A (NOR3X1)                                 0.00       1.48 r
+  U122290/Y (NOR3X1)                                 0.04       1.53 f
+  n83494 (net)                   1         0.00      0.00       1.53 f
+  U122301/A (NOR3X1)                                 0.00       1.53 f
+  U122301/Y (NOR3X1)                                 0.05       1.58 r
+  n83495 (net)                   1         0.00      0.00       1.58 r
+  U122302/B (AND2X1)                                 0.00       1.58 r
+  U122302/Y (AND2X1)                                 0.04       1.62 r
+  n83497 (net)                   1         0.00      0.00       1.62 r
+  U122303/C (NAND3X1)                                0.00       1.62 r
+  U122303/Y (NAND3X1)                                0.01       1.63 f
+  n83500 (net)                   1         0.00      0.00       1.63 f
+  U122304/B (AND2X1)                                 0.00       1.63 f
+  U122304/Y (AND2X1)                                 0.05       1.68 f
+  n83502 (net)                   1         0.00      0.00       1.68 f
+  U122305/C (NAND3X1)                                0.00       1.68 f
+  U122305/Y (NAND3X1)                                0.03       1.71 r
+  n83852 (net)                   1         0.00      0.00       1.71 r
+  U122653/A (NOR3X1)                                 0.00       1.71 r
+  U122653/Y (NOR3X1)                                 0.04       1.75 f
+  n84547 (net)                   1         0.00      0.00       1.75 f
+  U123348/A (OR2X1)                                  0.00       1.75 f
+  U123348/Y (OR2X1)                                  0.04       1.80 f
+  mem_ctrl_MPORT_data[19] (net)     1      0.00      0.00       1.80 f
+  U62614/A (AOI22X1)                                 0.00       1.80 f
+  U62614/Y (AOI22X1)                                 0.05       1.84 r
+  n29831 (net)                   1         0.00      0.00       1.84 r
+  U68808/A (INVX1)                                   0.00       1.84 r
+  U68808/Y (INVX1)                                   0.02       1.87 f
+  n114261 (net)                  1         0.00      0.00       1.87 f
+  ctrl_reg_19_/D (DFFPOSX1)                          0.00       1.87 f
+  data arrival time                                             1.87
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_19_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.87
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+  Startpoint: rdAddrBase_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_1_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_1_/Q (DFFPOSX1)                     0.08       0.08 r
+  N19 (net)                      5         0.01      0.00       0.08 r
+  U68810/A (INVX1)                                   0.00       0.08 r
+  U68810/Y (INVX1)                                   0.03       0.11 f
+  n108175 (net)                  3         0.01      0.00       0.11 f
+  U102504/A (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66683/A (BUFX2)                                   0.00       0.75 f
+  U66683/Y (BUFX2)                                   0.47       1.21 f
+  n112765 (net)                144         0.38      0.00       1.21 f
+  U115338/B (OAI21X1)                                0.00       1.21 f
+  U115338/Y (OAI21X1)                                0.17       1.38 r
+  n76535 (net)                   1         0.00      0.00       1.38 r
+  U115339/C (AOI21X1)                                0.00       1.38 r
+  U115339/Y (AOI21X1)                                0.06       1.44 f
+  n76536 (net)                   1         0.00      0.00       1.44 f
+  U115340/C (NAND3X1)                                0.00       1.44 f
+  U115340/Y (NAND3X1)                                0.04       1.48 r
+  n76543 (net)                   1         0.00      0.00       1.48 r
+  U115345/A (NOR3X1)                                 0.00       1.48 r
+  U115345/Y (NOR3X1)                                 0.04       1.53 f
+  n76554 (net)                   1         0.00      0.00       1.53 f
+  U115356/A (NOR3X1)                                 0.00       1.53 f
+  U115356/Y (NOR3X1)                                 0.05       1.58 r
+  n76555 (net)                   1         0.00      0.00       1.58 r
+  U115357/B (AND2X1)                                 0.00       1.58 r
+  U115357/Y (AND2X1)                                 0.04       1.62 r
+  n76557 (net)                   1         0.00      0.00       1.62 r
+  U115358/C (NAND3X1)                                0.00       1.62 r
+  U115358/Y (NAND3X1)                                0.01       1.63 f
+  n76560 (net)                   1         0.00      0.00       1.63 f
+  U115359/B (AND2X1)                                 0.00       1.63 f
+  U115359/Y (AND2X1)                                 0.05       1.68 f
+  n76562 (net)                   1         0.00      0.00       1.68 f
+  U115360/C (NAND3X1)                                0.00       1.68 f
+  U115360/Y (NAND3X1)                                0.03       1.71 r
+  n76912 (net)                   1         0.00      0.00       1.71 r
+  U115708/A (NOR3X1)                                 0.00       1.71 r
+  U115708/Y (NOR3X1)                                 0.04       1.75 f
+  n77607 (net)                   1         0.00      0.00       1.75 f
+  U116403/A (OR2X1)                                  0.00       1.75 f
+  U116403/Y (OR2X1)                                  0.04       1.79 f
+  mem_ctrl_MPORT_data[14] (net)     1      0.00      0.00       1.79 f
+  U62604/A (AOI22X1)                                 0.00       1.79 f
+  U62604/Y (AOI22X1)                                 0.05       1.84 r
+  n29826 (net)                   1         0.00      0.00       1.84 r
+  U68803/A (INVX1)                                   0.00       1.84 r
+  U68803/Y (INVX1)                                   0.02       1.86 f
+  n114266 (net)                  1         0.00      0.00       1.86 f
+  ctrl_reg_14_/D (DFFPOSX1)                          0.00       1.86 f
+  data arrival time                                             1.86
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_14_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.86
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+  Startpoint: rdAddrBase_reg_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: ctrl_reg_20_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  rdAddrBase_reg_1_/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  rdAddrBase_reg_1_/Q (DFFPOSX1)                     0.08       0.08 r
+  N19 (net)                      5         0.01      0.00       0.08 r
+  U68810/A (INVX1)                                   0.00       0.08 r
+  U68810/Y (INVX1)                                   0.03       0.11 f
+  n108175 (net)                  3         0.01      0.00       0.11 f
+  U102504/A (NOR2X1)                                 0.00       0.11 f
+  U102504/Y (NOR2X1)                                 0.04       0.15 r
+  n63726 (net)                   2         0.00      0.00       0.15 r
+  U62845/A (INVX1)                                   0.00       0.15 r
+  U62845/Y (INVX1)                                   0.02       0.17 f
+  n141968 (net)                  1         0.00      0.00       0.17 f
+  U62685/B (OR2X2)                                   0.00       0.17 f
+  U62685/Y (OR2X2)                                   0.52       0.69 f
+  n112747 (net)                218         0.46      0.00       0.69 f
+  U67380/A (BUFX2)                                   0.00       0.69 f
+  U67380/Y (BUFX2)                                   0.05       0.75 f
+  n112760 (net)                  3         0.00      0.00       0.75 f
+  U66686/A (BUFX2)                                   0.00       0.75 f
+  U66686/Y (BUFX2)                                   0.47       1.21 f
+  n112767 (net)                144         0.38      0.00       1.21 f
+  U123672/B (OAI21X1)                                0.00       1.21 f
+  U123672/Y (OAI21X1)                                0.17       1.38 r
+  n84863 (net)                   1         0.00      0.00       1.38 r
+  U123673/C (AOI21X1)                                0.00       1.38 r
+  U123673/Y (AOI21X1)                                0.06       1.44 f
+  n84864 (net)                   1         0.00      0.00       1.44 f
+  U123674/C (NAND3X1)                                0.00       1.44 f
+  U123674/Y (NAND3X1)                                0.04       1.48 r
+  n84871 (net)                   1         0.00      0.00       1.48 r
+  U123679/A (NOR3X1)                                 0.00       1.48 r
+  U123679/Y (NOR3X1)                                 0.04       1.53 f
+  n84882 (net)                   1         0.00      0.00       1.53 f
+  U123690/A (NOR3X1)                                 0.00       1.53 f
+  U123690/Y (NOR3X1)                                 0.05       1.58 r
+  n84883 (net)                   1         0.00      0.00       1.58 r
+  U123691/B (AND2X1)                                 0.00       1.58 r
+  U123691/Y (AND2X1)                                 0.04       1.62 r
+  n84885 (net)                   1         0.00      0.00       1.62 r
+  U123692/C (NAND3X1)                                0.00       1.62 r
+  U123692/Y (NAND3X1)                                0.01       1.63 f
+  n84888 (net)                   1         0.00      0.00       1.63 f
+  U123693/B (AND2X1)                                 0.00       1.63 f
+  U123693/Y (AND2X1)                                 0.05       1.68 f
+  n84890 (net)                   1         0.00      0.00       1.68 f
+  U123694/C (NAND3X1)                                0.00       1.68 f
+  U123694/Y (NAND3X1)                                0.03       1.71 r
+  n85240 (net)                   1         0.00      0.00       1.71 r
+  U124042/A (NOR3X1)                                 0.00       1.71 r
+  U124042/Y (NOR3X1)                                 0.04       1.75 f
+  n85935 (net)                   1         0.00      0.00       1.75 f
+  U124737/A (OR2X1)                                  0.00       1.75 f
+  U124737/Y (OR2X1)                                  0.04       1.79 f
+  mem_ctrl_MPORT_data[20] (net)     1      0.00      0.00       1.79 f
+  U62616/A (AOI22X1)                                 0.00       1.79 f
+  U62616/Y (AOI22X1)                                 0.05       1.84 r
+  n29832 (net)                   1         0.00      0.00       1.84 r
+  U68809/A (INVX1)                                   0.00       1.84 r
+  U68809/Y (INVX1)                                   0.02       1.86 f
+  n114260 (net)                  1         0.00      0.00       1.86 f
+  ctrl_reg_20_/D (DFFPOSX1)                          0.00       1.86 f
+  data arrival time                                             1.86
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  ctrl_reg_20_/CLK (DFFPOSX1)                        0.00       5.00 r
+  library setup time                                -0.06       4.94
+  data required time                                            4.94
+  ---------------------------------------------------------------------
+  data required time                                            4.94
+  data arrival time                                            -1.86
+  ---------------------------------------------------------------------
+  slack (MET)                                                   3.08
+
+
+1

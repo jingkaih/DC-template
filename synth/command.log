@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version P-2019.03-SP1-1 for linux64 -- May 06, 2019
-#@ # Date:   Thu Oct 21 19:21:38 2021
-#@ # Run by: esmailid@sahand
+#@ # Date:   Mon Nov  1 01:08:16 2021
+#@ # Run by: jingkai@sahand
 #@ 
 
 source /opt/synopsys/syn/P-2019.03-SP1-1/admin/setup/.synopsys_dc.setup
@@ -6711,17 +6711,19 @@ source -echo -verbose ./run_synth.tcl
 #@ }
 #@ # -- Starting source ./analyze.tcl
 
-#@ analyze -library WORK -format verilog ../rtl/kernel_1.v;
+#@ #analyze -library WORK -format verilog ../rtl/kernel_1.v;
 #@ 
-#@ analyze -library WORK -format verilog ../rtl/kernel_2.v;
+#@ #analyze -library WORK -format verilog ../rtl/kernel_2.v;
 #@ 
-#@ analyze -library WORK -format verilog ../rtl/kernel_3.v;
+#@ #analyze -library WORK -format verilog ../rtl/kernel_3.v;
 #@ 
-#@ analyze -library WORK -format verilog ../rtl/kernel_4.v;
+#@ #analyze -library WORK -format verilog ../rtl/kernel_4.v;
 #@ 
-#@ analyze -library WORK -format verilog ../rtl/kernel_5.v;
+#@ #analyze -library WORK -format verilog ../rtl/kernel_5.v;
 #@ 
-#@ analyze -library WORK -format verilog ../rtl/jscS_Nulla.v;
+#@ #analyze -library WORK -format verilog ../rtl/jscS_Nulla.v;
+#@ 
+#@ analyze -library WORK -format verilog ../rtl/Tile.v;
 #@ # -- End source ./analyze.tcl
 
 #@ elaborate $design

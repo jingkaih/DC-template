@@ -1,0 +1,371 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -input_pins
+        -nets
+        -max_paths 10
+        -capacitance
+Design : Tile
+Version: P-2019.03-SP1-1
+Date   : Mon Nov  1 01:21:09 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: mem_reg_186__14_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__14_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__14_/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mem_reg_186__14_/Q (DFFPOSX1)                      0.07       0.07 r
+  mem_186__14_ (net)             2         0.01      0.00       0.07 r
+  U51136/C (AOI22X1)                                 0.00       0.07 r
+  U51136/Y (AOI22X1)                                 0.02       0.09 f
+  n24375 (net)                   1         0.00      0.00       0.09 f
+  U68816/A (INVX1)                                   0.00       0.09 f
+  U68816/Y (INVX1)                                   0.00       0.09 r
+  n132532 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__14_/D (DFFPOSX1)                      0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__14_/CLK (DFFPOSX1)                    0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__13_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__13_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__13_/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mem_reg_186__13_/Q (DFFPOSX1)                      0.07       0.07 r
+  mem_186__13_ (net)             2         0.01      0.00       0.07 r
+  U51134/C (AOI22X1)                                 0.00       0.07 r
+  U51134/Y (AOI22X1)                                 0.02       0.09 f
+  n24374 (net)                   1         0.00      0.00       0.09 f
+  U68815/A (INVX1)                                   0.00       0.09 f
+  U68815/Y (INVX1)                                   0.00       0.09 r
+  n133556 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__13_/D (DFFPOSX1)                      0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__13_/CLK (DFFPOSX1)                    0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__12_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__12_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__12_/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mem_reg_186__12_/Q (DFFPOSX1)                      0.07       0.07 r
+  mem_186__12_ (net)             2         0.01      0.00       0.07 r
+  U51132/C (AOI22X1)                                 0.00       0.07 r
+  U51132/Y (AOI22X1)                                 0.02       0.09 f
+  n24373 (net)                   1         0.00      0.00       0.09 f
+  U68814/A (INVX1)                                   0.00       0.09 f
+  U68814/Y (INVX1)                                   0.00       0.09 r
+  n134580 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__12_/D (DFFPOSX1)                      0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__12_/CLK (DFFPOSX1)                    0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__11_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__11_/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mem_reg_186__11_/Q (DFFPOSX1)                      0.07       0.07 r
+  mem_186__11_ (net)             2         0.01      0.00       0.07 r
+  U51130/C (AOI22X1)                                 0.00       0.07 r
+  U51130/Y (AOI22X1)                                 0.02       0.09 f
+  n24372 (net)                   1         0.00      0.00       0.09 f
+  U68813/A (INVX1)                                   0.00       0.09 f
+  U68813/Y (INVX1)                                   0.00       0.09 r
+  n135604 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__11_/D (DFFPOSX1)                      0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__11_/CLK (DFFPOSX1)                    0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__10_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__10_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__10_/CLK (DFFPOSX1)                    0.00 #     0.00 r
+  mem_reg_186__10_/Q (DFFPOSX1)                      0.07       0.07 r
+  mem_186__10_ (net)             2         0.01      0.00       0.07 r
+  U51128/C (AOI22X1)                                 0.00       0.07 r
+  U51128/Y (AOI22X1)                                 0.02       0.09 f
+  n24371 (net)                   1         0.00      0.00       0.09 f
+  U68812/A (INVX1)                                   0.00       0.09 f
+  U68812/Y (INVX1)                                   0.00       0.09 r
+  n136628 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__10_/D (DFFPOSX1)                      0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__10_/CLK (DFFPOSX1)                    0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__9_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__9_/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  mem_reg_186__9_/Q (DFFPOSX1)                       0.07       0.07 r
+  mem_186__9_ (net)              2         0.01      0.00       0.07 r
+  U51126/C (AOI22X1)                                 0.00       0.07 r
+  U51126/Y (AOI22X1)                                 0.02       0.09 f
+  n24370 (net)                   1         0.00      0.00       0.09 f
+  U68811/A (INVX1)                                   0.00       0.09 f
+  U68811/Y (INVX1)                                   0.00       0.09 r
+  n137652 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__9_/D (DFFPOSX1)                       0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__9_/CLK (DFFPOSX1)                     0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__8_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__8_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__8_/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  mem_reg_186__8_/Q (DFFPOSX1)                       0.07       0.07 r
+  mem_186__8_ (net)              2         0.01      0.00       0.07 r
+  U51124/C (AOI22X1)                                 0.00       0.07 r
+  U51124/Y (AOI22X1)                                 0.02       0.09 f
+  n24369 (net)                   1         0.00      0.00       0.09 f
+  U72261/A (INVX1)                                   0.00       0.09 f
+  U72261/Y (INVX1)                                   0.00       0.09 r
+  n138676 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__8_/D (DFFPOSX1)                       0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__8_/CLK (DFFPOSX1)                     0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__7_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__7_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__7_/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  mem_reg_186__7_/Q (DFFPOSX1)                       0.07       0.07 r
+  mem_186__7_ (net)              2         0.01      0.00       0.07 r
+  U51122/C (AOI22X1)                                 0.00       0.07 r
+  U51122/Y (AOI22X1)                                 0.02       0.09 f
+  n24368 (net)                   1         0.00      0.00       0.09 f
+  U72260/A (INVX1)                                   0.00       0.09 f
+  U72260/Y (INVX1)                                   0.00       0.09 r
+  n139700 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__7_/D (DFFPOSX1)                       0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__7_/CLK (DFFPOSX1)                     0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__6_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__6_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__6_/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  mem_reg_186__6_/Q (DFFPOSX1)                       0.07       0.07 r
+  mem_186__6_ (net)              2         0.01      0.00       0.07 r
+  U51120/C (AOI22X1)                                 0.00       0.07 r
+  U51120/Y (AOI22X1)                                 0.02       0.09 f
+  n24367 (net)                   1         0.00      0.00       0.09 f
+  U72259/A (INVX1)                                   0.00       0.09 f
+  U72259/Y (INVX1)                                   0.00       0.09 r
+  n140724 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__6_/D (DFFPOSX1)                       0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__6_/CLK (DFFPOSX1)                     0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+  Startpoint: mem_reg_186__5_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg_186__5_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                        Fanout       Cap      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__5_/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  mem_reg_186__5_/Q (DFFPOSX1)                       0.07       0.07 r
+  mem_186__5_ (net)              2         0.01      0.00       0.07 r
+  U51118/C (AOI22X1)                                 0.00       0.07 r
+  U51118/Y (AOI22X1)                                 0.02       0.09 f
+  n24364 (net)                   1         0.00      0.00       0.09 f
+  U72258/A (INVX1)                                   0.00       0.09 f
+  U72258/Y (INVX1)                                   0.00       0.09 r
+  n141748 (net)                  1         0.00      0.00       0.09 r
+  mem_reg_186__5_/D (DFFPOSX1)                       0.00       0.09 r
+  data arrival time                                             0.09
+
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  mem_reg_186__5_/CLK (DFFPOSX1)                     0.00       0.00 r
+  library hold time                                 -0.02      -0.02
+  data required time                                           -0.02
+  ---------------------------------------------------------------------
+  data required time                                           -0.02
+  data arrival time                                            -0.09
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.11
+
+
+1

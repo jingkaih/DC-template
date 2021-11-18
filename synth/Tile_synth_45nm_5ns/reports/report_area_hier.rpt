@@ -1,0 +1,118 @@
+ 
+****************************************
+Report : area
+Design : Tile
+Version: P-2019.03-SP1-1
+Date   : Mon Nov  1 01:21:38 2021
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/home2/students/esmailid/NCSU-FreePDK45-1.4/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                        19636
+Number of nets:                        170984
+Number of cells:                       152436
+Number of combinational cells:         119028
+Number of sequential cells:             33332
+Number of macros/black boxes:               0
+Number of buf/inv:                      35856
+Number of references:                      28
+
+Combinational area:             288498.885125
+Buf/Inv area:                    51682.600162
+Noncombinational area:          265926.023300
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                554424.908425
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+Tile                              554424.9084    100.0  266328.2147  261841.2362  0.0000  Tile
+RegMux                               812.3583      0.1     301.7599     510.5984  0.0000  RegMux_0
+RegMux_1                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_7
+RegMux_2                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_6
+RegMux_3                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_5
+RegMux_4                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_4
+RegMux_5                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_3
+RegMux_6                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_2
+RegMux_7                             812.3583      0.1     301.7599     510.5984  0.0000  RegMux_1
+add_1172                              43.6449      0.0      43.6449       0.0000  0.0000  Tile_DW01_inc_1
+add_1173                              43.6449      0.0      43.6449       0.0000  0.0000  Tile_DW01_inc_0
+crossBar                           19669.3014      3.5     311.6152       0.0000  0.0000  CrossBarSwitchNew
+crossBar/cells_2d_0                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_0
+crossBar/cells_2d_1                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_63
+crossBar/cells_2d_10                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_54
+crossBar/cells_2d_11                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_53
+crossBar/cells_2d_12                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_52
+crossBar/cells_2d_13                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_51
+crossBar/cells_2d_14                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_50
+crossBar/cells_2d_15                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_49
+crossBar/cells_2d_16                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_48
+crossBar/cells_2d_17                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_47
+crossBar/cells_2d_18                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_46
+crossBar/cells_2d_19                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_45
+crossBar/cells_2d_2                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_62
+crossBar/cells_2d_20                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_44
+crossBar/cells_2d_21                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_43
+crossBar/cells_2d_22                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_42
+crossBar/cells_2d_23                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_41
+crossBar/cells_2d_24                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_40
+crossBar/cells_2d_25                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_39
+crossBar/cells_2d_26                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_38
+crossBar/cells_2d_27                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_37
+crossBar/cells_2d_28                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_36
+crossBar/cells_2d_29                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_35
+crossBar/cells_2d_3                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_61
+crossBar/cells_2d_30                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_34
+crossBar/cells_2d_31                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_33
+crossBar/cells_2d_32                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_32
+crossBar/cells_2d_33                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_31
+crossBar/cells_2d_34                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_30
+crossBar/cells_2d_35                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_29
+crossBar/cells_2d_36                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_28
+crossBar/cells_2d_37                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_27
+crossBar/cells_2d_38                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_26
+crossBar/cells_2d_39                 301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_25
+crossBar/cells_2d_4                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_60
+crossBar/cells_2d_40                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_24
+crossBar/cells_2d_41                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_23
+crossBar/cells_2d_42                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_22
+crossBar/cells_2d_43                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_21
+crossBar/cells_2d_44                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_20
+crossBar/cells_2d_45                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_19
+crossBar/cells_2d_46                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_18
+crossBar/cells_2d_47                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_17
+crossBar/cells_2d_48                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_16
+crossBar/cells_2d_49                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_15
+crossBar/cells_2d_5                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_59
+crossBar/cells_2d_50                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_14
+crossBar/cells_2d_51                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_13
+crossBar/cells_2d_52                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_12
+crossBar/cells_2d_53                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_11
+crossBar/cells_2d_54                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_10
+crossBar/cells_2d_55                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_9
+crossBar/cells_2d_56                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_8
+crossBar/cells_2d_57                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_7
+crossBar/cells_2d_58                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_6
+crossBar/cells_2d_59                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_5
+crossBar/cells_2d_6                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_58
+crossBar/cells_2d_60                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_4
+crossBar/cells_2d_61                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_3
+crossBar/cells_2d_62                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_2
+crossBar/cells_2d_63                 303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_1
+crossBar/cells_2d_7                  301.7599      0.1     301.7599       0.0000  0.0000  CrossBarCell_57
+crossBar/cells_2d_8                  303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_56
+crossBar/cells_2d_9                  303.1678      0.1     303.1678       0.0000  0.0000  CrossBarCell_55
+--------------------------------  -----------  -------  -----------  -----------  ------  -----------------
+Total                                                   288498.8851  265926.0233  0.0000
+
+1
